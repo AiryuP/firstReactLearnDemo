@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.padding{
+    padding: 10px;
+}
+.genZu{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(31, 136, 228);
+}
+.titleTxt{
+    font-size: 30px;
+    color: rgb(36, 168, 168);
+}
+.titleTxt::after{
+    width: 100%;
+    border-bottom: 1px dashed rgb(253, 0, 0);
+}
+
+
+
+.bindData  .red{
+    color: red;
+}
+
