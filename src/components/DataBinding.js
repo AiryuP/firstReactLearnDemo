@@ -9,7 +9,8 @@ class DataBinding extends React.Component{
             msg: '我是一个表单事件，ref,数据双向绑定的学习组件',
             userName : '',
             userName2: '',
-            userName3: ''
+            userName3: '',
+            userName4: ''
         }
 
 
@@ -66,6 +67,11 @@ class DataBinding extends React.Component{
             console.log( this.state.userName3 );
         }
     }
+    inputChang = (e) =>{
+        this.setState ({
+            userName4: e.target.value
+        })
+    }
 
     render(){
         return (
@@ -118,6 +124,13 @@ class DataBinding extends React.Component{
                     onKeyDown:     键盘按下去触发
                     onKeyPress:    表示的是一个过程 &lt; 需要自己查找资料 &gt;
                 </div>
+                <br/><br/><br/>
+                <h2>实现双向数据绑定</h2>
+                
+                {/* model改变影响view，view改变影响model */}
+
+                <input value={ this.state.userName4 } onChange={ this.inputChang } type="text"/>
+                <div>{ this.state.userName4 }</div>
                 
 
 

@@ -6,6 +6,7 @@ import EventMethod from './components/EventMethod';
 import Binddata from './components/BindData';
 import YrImg from './components/YrImg';
 import DataBinding from './components/DataBinding';
+import Tofrom from './components/Tofrom';
 
 class App extends Component {
 
@@ -32,7 +33,10 @@ class App extends Component {
 
         <DataBinding />
 
+        <br /><br /><br /><br />
+        <div className="titleTxt">深入表单事件</div>
 
+        <Tofrom />
 
 
       </div>
