@@ -7,6 +7,7 @@ import Binddata from './components/BindData';
 import YrImg from './components/YrImg';
 import DataBinding from './components/DataBinding';
 import Tofrom from './components/Tofrom';
+import Todolist from './components/Todolist';
 
 class App extends Component {
 
@@ -38,6 +39,9 @@ class App extends Component {
 
         <Tofrom />
 
+        <br /><br /><br /><br />
+        <div className='titleTxt'>Todolist</div>
+        <Todolist />
 
       </div>
     );
